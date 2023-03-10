@@ -40,10 +40,8 @@ class SearchVC: UIViewController {
         title = "Search"
         //Почему-то во ViewDidLoad не работает это, поэтому делаю здесь.
         let navBar = self.navigationController?.navigationBar
-        //Возвращаем обратно обычный бар (без увеличенного заголовка)
+        //Делаем бар с большим заголовком
         navBar?.prefersLargeTitles = true
-        //Меняем фон у navigationBar
-        navBar?.backgroundColor = .black
         navBar?.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
 
