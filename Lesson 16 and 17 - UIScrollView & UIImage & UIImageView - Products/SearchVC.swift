@@ -42,6 +42,7 @@ class SearchVC: UIViewController {
         let navBar = self.navigationController?.navigationBar
         //Делаем бар с большим заголовком
         navBar?.prefersLargeTitles = true
+        //Назначаем цвет текста большому заголовку
         navBar?.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
 
