@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A878425629BD0449009C58FE /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878425529BD0449009C58FE /* LaunchVC.swift */; };
 		A8A1A09F29B7BF5800E65D6D /* InfoProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A1A09E29B7BF5800E65D6D /* InfoProduct.swift */; };
 		A8B575F929B511B800ADE9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B575F829B511B800ADE9B6 /* AppDelegate.swift */; };
 		A8B575FB29B511B800ADE9B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B575FA29B511B800ADE9B6 /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A878425529BD0449009C58FE /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		A8A1A09E29B7BF5800E65D6D /* InfoProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProduct.swift; sourceTree = "<group>"; };
 		A8B575F529B511B800ADE9B6 /* Lesson 16 and 17 - UIScrollView & UIImage & UIImageView - Products.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson 16 and 17 - UIScrollView & UIImage & UIImageView - Products.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B575F829B511B800ADE9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				A8B5762A29B5140100ADE9B6 /* SearchVC.swift */,
 				A8A1A09E29B7BF5800E65D6D /* InfoProduct.swift */,
 				A8B5762829B513DA00ADE9B6 /* ForYouVC.swift */,
+				A878425529BD0449009C58FE /* LaunchVC.swift */,
 				A8B575FC29B511B800ADE9B6 /* BuyVC.swift */,
 				A8B575FE29B511B800ADE9B6 /* Main.storyboard */,
 				A8B5760129B511BA00ADE9B6 /* Assets.xcassets */,
@@ -275,6 +278,7 @@
 				A8B5762D29B5140C00ADE9B6 /* CartVC.swift in Sources */,
 				A8B575F929B511B800ADE9B6 /* AppDelegate.swift in Sources */,
 				A8B5762929B513DA00ADE9B6 /* ForYouVC.swift in Sources */,
+				A878425629BD0449009C58FE /* LaunchVC.swift in Sources */,
 				A8A1A09F29B7BF5800E65D6D /* InfoProduct.swift in Sources */,
 				A8B575FB29B511B800ADE9B6 /* SceneDelegate.swift in Sources */,
 			);

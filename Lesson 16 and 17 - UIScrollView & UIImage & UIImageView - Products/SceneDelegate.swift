@@ -11,40 +11,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    func scene(_ scene: UIScene,
+               willConnectTo session: UISceneSession,
+               options connectionOptions: UIScene.ConnectionOptions) {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
 
-            let buyVC = BuyVC()
-            let forYouVC = ForYouVC()
-            let searchVC = SearchVC()
-            let cartVC = CartVC()
-
-            let searchNavController = UINavigationController(rootViewController: searchVC)
-            //Создаём большой заголовок и назначаем белый цвет тексту заголовка, чтоб при переходе заголовок уходил анимацией в навигейшн бар.
-//            searchVC.title = "Search"
-//            UINavigationBar.appearance().prefersLargeTitles = true
-//            UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-            let tabBarController = UITabBarController()
-            //Этой строчкой мы устанавливаем первый загрузочный View
-            tabBarController.setViewControllers([searchNavController], animated: true)
-            //Этой строчкой создаем общее количество TabBar с ViewController'ами
-            tabBarController.viewControllers = [buyVC, forYouVC, searchNavController, cartVC]
-            //Назначаем цвет для текущей страницы меню TabBar
-            UITabBar.appearance().tintColor = .systemBlue
-            //Назначаем цвет для невыбранных страниц в меню TabBar
-            UITabBar.appearance().barTintColor = .lightGray
-            //Назначаем цвет фона для меню TabBar
-            UITabBar.appearance().backgroundColor = .tertiaryLabel
-            //Подгружаем картинки и названия других TabBar'ов, а то видно не будет их.
-            forYouVC.loadViewIfNeeded()
-            buyVC.loadViewIfNeeded()
-            cartVC.loadViewIfNeeded()
+            let launchVC = LaunchVC()
 
             self.window = window
             window.backgroundColor = .black
-            window.rootViewController = tabBarController
+            window.rootViewController = launchVC
             window.makeKeyAndVisible()
 
         }
